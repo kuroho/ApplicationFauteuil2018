@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.guedira.swcontol">
+
+    <uses-permission android:name="android.permission.BLUETOOTH"  android:required="false" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"  android:required="false"/>
+    <uses-permission android:name="android.permission.VIBRATE"  android:required="false"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"  android:required="false"/>
+    <uses-permission android:name="android.permission.CAMERA" android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"  android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps"  android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="nosensor"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <uses-feature android:name="android.hardware.camera"
+            android:required="true" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <receiver android:name=".mReceiver">
+                <intent-filter>
+                    <action android:name="android.bluetooth.BluetoothDevice.ACTION_ACL_CONNECTED" />
+                    <action android:name="android.bluetooth.BluetoothDevice.ACTION_ACL_DISCONNECTED" />
+                    <action android:name="android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED" />
+                </intent-filter>
+            </receiver>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".InterfaceSettingsActivity"
+            android:label="@string/title_activity_interface_settings"></activity>
+    </application>
+
+</manifest>

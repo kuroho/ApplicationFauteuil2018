@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xsl="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory android:title="Interface Design">
+        <!--
+         <ListPreference     android:title="Screen Orientation"
+             android:summary="Select the orientation of the screen"
+             android:key="orient"
+             android:defaultValue="p"
+             android:entries="@array/orient"
+             android:entryValues="@array/orientval" />
+ -->
+         <ListPreference     android:title="Interface Configuration"
+             android:summary="Select the configuration of your interface"
+             android:key="interfaceconfig"
+             android:defaultValue="c"
+             android:entries="@array/config"
+             android:entryValues="@array/configval" />
+
+
+         <ListPreference     android:title="Interface Positions"
+             android:summary="Select the position of the interface"
+             android:key="pos"
+             android:defaultValue="Center"
+             android:entries="@array/posit"
+             android:entryValues="@array/positval" />
+
+         <ListPreference     android:title="Ratio"
+             android:summary="Select the ratio of the interface"
+             android:key="ratrat"
+             android:defaultValue="Golden"
+             android:entries="@array/rat"
+             android:entryValues="@array/ratval" />
+
+         <com.example.guedira.swcontol.SeekBarPreference android:key="custom_ratio"
+             android:title="Neutral Zone Ratio"
+             android:summary="Ratio of interface to neutral zone"
+             android:dialogMessage="Ratio"
+             android:defaultValue="30"
+             android:text="percent"
+             android:max="100"
+             />
+     </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="Wheelchair Control">
+       <ListPreference     android:title="Speed Level"
+            android:summary="Select the speed level"
+            android:key="spd"
+            android:defaultValue="1"
+            android:entries="@array/sp"
+            android:entryValues="@array/spsp" />
+
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory android:title="Touch strategy">
+        <ListPreference     android:title="Touch strategy"
+            android:summary="Select the touch strategy"
+            android:key="tch_s"
+            android:defaultValue="F"
+            android:entries="@array/tch"
+            android:entryValues="@array/tch_val" />
+
+    </PreferenceCategory>
+
+
+
+
+
+
+    <PreferenceCategory android:title="Filters">
+        <SwitchPreference    android:title="Spasm filter"
+            android:summary="Check to enable spasm filter"
+            android:key="spsm_fltr"
+            android:defaultValue="false"/>
+
+        <ListPreference     android:title="Filter threshold"
+            android:summary="Select the thresholt for the filter"
+            android:key="fltr_val"
+            android:defaultValue="3"
+            android:entries="@array/fltrv"
+            android:entryValues="@array/filter_val" />
+
+
+        <CheckBoxPreference    android:title="Give back control on release"
+            android:summary="check for giving back the control on release after filter intervention"
+            android:key="spsm_on_release"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory android:title="Feedback">
+
+         <SwitchPreference    android:title="Enable Vibration"
+             android:summary="Check to enable vibration feedback"
+             android:key="en_vib"
+             android:defaultValue="true"/>
+
+         <CheckBoxPreference    android:title="Vibrate on region change"
+             android:summary="Check for a a vibration on region change"
+             android:key="vibonch"
+             android:defaultValue="false"/>
+
+         <CheckBoxPreference    android:title="Continuous Vibration"
+             android:summary="Check for a continuous vibration"
+             android:key="cont_vib"
+             android:defaultValue="false"/>
+
+
+         <SwitchPreference    android:title="Enable Sound"
+             android:summary="Check to enable sound feedback"
+             android:key="en_snd"
+             android:defaultValue="true"/>
+
+         <CheckBoxPreference    android:title="Sound on region change"
+             android:summary="Check for a sound on region change"
+             android:key="sndonch"
+             android:defaultValue="false"/>
+
+         <CheckBoxPreference    android:title="Continuous Sound"
+             android:summary="Check for a continuous sound"
+             android:key="cont_snd"
+             android:defaultValue="false"/>
+
+         <CheckBoxPreference    android:title="Enable Visual Feedback"
+             android:summary="Check to enable Visual feedback"
+             android:key="en_visfbk"
+             android:defaultValue="true"/>
+
+     </PreferenceCategory>
+
+ <PreferenceCategory android:title="Analog Control">
+
+
+     <com.example.guedira.swcontol.SeekBarPreference android:key="control_prec"
+         android:title="Precision of control"
+         android:summary="Precision of hand control"
+         android:dialogMessage="Precision"
+         android:defaultValue="8"
+         android:text="subdivisions"
+         android:max="8"
+         />
+
+     <com.example.guedira.swcontol.SeekBarPreference android:key="sp_increment"
+         android:title="incremental speed"
+         android:summary="Precision of speed control"
+         android:dialogMessage="Speed Precision"
+         android:defaultValue="127"
+         android:text="subdivisions"
+         android:max="127"
+         />
+
+
+ </PreferenceCategory>
+
+
+
+
+
+     <PreferenceCategory android:title="Debugger">
+         <CheckBoxPreference    android:title="Debug mode"
+             android:summary="Check to show debug information"
+             android:key="bug"
+             android:defaultValue="false"/>
+         <CheckBoxPreference    android:title="Add offset"
+             android:summary="Check to correct for offset"
+             android:key="offs"
+             android:defaultValue="false"/>
+
+     </PreferenceCategory>
+
+
+
+
+
+ </PreferenceScreen>

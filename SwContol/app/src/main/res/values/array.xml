@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/tools">
+    <string-array name="config">
+        <item>Circular</item>
+        <item>Buttons</item>
+        <item>Scrolling</item>
+       </string-array>
+    <string-array name="configval">
+        <item>c</item>
+        <item>b</item>
+        <item>s</item>
+        </string-array>
+
+
+    <string-array name="sp">
+        <item>level 1</item>
+        <item>level 2</item>
+        <item>level 3</item>
+        <item>level 4</item>
+    </string-array>
+    <string-array name="spsp">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+
+
+    <string-array name="quadrants">
+        <item>4 quadrants</item>
+        <item>8 quadrants</item>
+    </string-array>
+    <string-array name="quadrantsval">
+        <item>4</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="orient">
+        <item>Portrait</item>
+        <item>Landscape</item>
+    </string-array>
+    <string-array name="orientval">
+        <item>p</item>
+        <item>l</item>
+    </string-array>
+
+
+    <string-array name="posit">
+        <item>Center</item>
+        <item>Free</item>
+        <item>Moving</item>
+        >
+    </string-array>
+    <string-array name="positval">
+        <item>Center</item>
+        <item>Free</item>
+        <item>Moving</item>
+        >
+    </string-array>
+
+    <string-array name="rat">
+        <item>Golden</item>
+        <item>1/2</item>
+        <item>1/3</item>
+        <item>1/4</item>
+        <item>Custom</item>
+    </string-array>
+
+    <array name="ratval">
+
+
+        <item>Golden</item>
+        <item>1/2</item>
+        <item>1/3</item>
+        <item>1/4</item>
+        <item>Custom</item>
+    </array>
+
+
+
+    <string-array name="fltrv">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="filter_val">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+
+    <string-array name="tch">
+        <item>First touch</item>
+        <item>Last touch</item>
+        <item>Upper touch</item>
+        <item>Bottom touch</item>
+        <item>Left touch</item>
+        <item>Right touch</item>
+        <item>Center of gravity</item>
+
+
+    </string-array>
+
+    <string-array name="tch_val">
+        <item>F</item>
+        <item>L</item>
+        <item>u</item>
+        <item>b</item>
+        <item>l</item>
+        <item>r</item>
+        <item>C</item>
+    </string-array>
+
+
+
+
+
+
+</resources>
